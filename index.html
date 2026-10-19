@@ -8,7 +8,9 @@
     <title>My Dream Travel Destination</title>
 
     <style>
-        /* PAGE BACKGROUND */
+        /* =========================
+           PAGE BACKGROUND
+        ========================= */
         body {
             background-image: url("Banaue.png");
             background-size: cover;
@@ -17,42 +19,87 @@
             background-repeat: no-repeat;
 
             font-family: Arial, sans-serif;
+            color: white;
             text-align: center;
             margin: 0;
             padding: 30px;
-            color: white;
         }
 
-        /* BACKGROUND ONLY BEHIND THE TEXT */
+        /* =========================
+           TEXT BACKGROUND
+           Background fits the text
+           ========================= */
         .text-bg {
             background-color: rgba(0, 0, 0, 0.65);
             padding: 5px 8px;
-            line-height: 2;
+
             box-decoration-break: clone;
             -webkit-box-decoration-break: clone;
         }
 
-        /* HEADINGS */
+        /* =========================
+           HEADINGS
+           Prevent full-width bars
+           ========================= */
         h1, h2, h3 {
+            background: transparent;
+            padding: 0;
             margin: 25px 0;
+            text-align: center;
         }
 
-        /* PARAGRAPHS */
+        /* Background only behind heading words */
+        h1 .text-bg,
+        h2 .text-bg,
+        h3 .text-bg {
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        /* =========================
+           INTRODUCTION PARAGRAPH
+           ========================= */
         p {
-            max-width: 800px;
+            background: transparent;
+            padding: 0;
             margin: 20px auto;
+            max-width: 1000px;
+            font-size: 18px;
             line-height: 1.8;
         }
 
-        /* GALLERY */
+        /* Paragraph background fits text */
+        p .text-bg {
+            display: inline;
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 3px 6px;
+
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+
+        /* =========================
+           GALLERY
+           ========================= */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
         .gallery img {
-            width: 280px;
+            width: 210px;
+            height: 300px;
             max-width: 100%;
-            height: 200px;
             object-fit: cover;
-            margin: 10px;
-            border: 3px solid white;
+
+            border: 2px solid white;
             border-radius: 10px;
+
             transition: transform 0.3s;
         }
 
@@ -60,7 +107,9 @@
             transform: scale(1.05);
         }
 
-        /* ACTIVITIES AND REASONS */
+        /* =========================
+           ACTIVITIES AND REASONS
+           ========================= */
         ol, ul {
             display: table;
             margin: 20px auto;
@@ -71,9 +120,21 @@
 
         li {
             margin-bottom: 8px;
+            background: transparent;
         }
 
-        /* TRAVEL BUDGET TABLE */
+        li .text-bg {
+            display: inline;
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 3px 6px;
+
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+
+        /* =========================
+           TRAVEL BUDGET TABLE
+           ========================= */
         table {
             margin: 25px auto;
             border-collapse: collapse;
@@ -83,14 +144,19 @@
         th, td {
             border: 1px solid white;
             padding: 12px;
+            background: transparent;
         }
 
-        /* TABLE HEADER */
-        th {
-            background-color: rgba(0, 0, 0, 0.75);
+        th .text-bg,
+        td .text-bg {
+            display: inline;
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 3px 6px;
         }
 
-        /* LINKS */
+        /* =========================
+           LINKS
+           ========================= */
         a {
             color: #ffff66;
             text-decoration: none;
@@ -101,7 +167,9 @@
             text-decoration: underline;
         }
 
-        /* AUDIO AND VIDEO */
+        /* =========================
+           AUDIO AND VIDEO
+           ========================= */
         audio, video {
             display: block;
             max-width: 100%;
@@ -114,7 +182,9 @@
             border-radius: 10px;
         }
 
-        /* SMALL SCREEN */
+        /* =========================
+           MOBILE RESPONSIVE
+           ========================= */
         @media (max-width: 600px) {
             body {
                 padding: 15px;
@@ -123,7 +193,10 @@
             .gallery img {
                 width: 100%;
                 height: auto;
-                margin: 10px 0;
+            }
+
+            p {
+                font-size: 16px;
             }
 
             table {
@@ -153,13 +226,23 @@
 
     <p>
         <span class="text-bg">
-            The Banaue Rice Terraces are one of the most beautiful and remarkable
-            destinations in the Philippines. Located in Ifugao, these terraces
-            were carved into the mountains by the ancestors of the Ifugao people.
-            They show the creativity, hard work, and rich cultural heritage
-            of the Filipino people.
+            The Banaue Rice Terraces are located in Banaue, Ifugao Province,
+            in the northern Philippines. The place is famous for its beautiful
+            and ancient rice terraces carved into the mountains. These terraces
+            were created by the Ifugao people using traditional farming methods
+            passed down through generations. What makes the Banaue Rice
+            Terraces special is their amazing design, natural beauty, and
+            importance to Ifugao culture and history. The terraces show the
+            strong relationship between the Ifugao people, their land, and
+            their traditional way of life. Tourists visit Banaue to enjoy the
+            breathtaking mountain scenery, take photographs, hike, and learn
+            about the culture and traditions of the Ifugao people. It is a
+            wonderful destination for people who want to experience the beauty,
+            history, and culture of the Philippine highlands.
         </span>
     </p>
+
+    <hr>
 
     <h3>
         <span class="text-bg">TRAVEL GALLERY</span>
@@ -171,6 +254,8 @@
         <img src="BAN4.jpg" alt="Banaue landscape">
         <img src="BAN5.jpg" alt="Banaue rice fields">
     </div>
+
+    <hr>
 
     <h3>
         <span class="text-bg">ACTIVITIES TO DO</span>
@@ -194,6 +279,8 @@
         </li>
     </ol>
 
+    <hr>
+
     <h3>
         <span class="text-bg">WHY VISIT BANAUE?</span>
     </h3>
@@ -212,6 +299,8 @@
             <span class="text-bg">It is a wonderful destination for photography and adventure.</span>
         </li>
     </ul>
+
+    <hr>
 
     <h3>
         <span class="text-bg">TRAVEL BUDGET</span>
@@ -273,6 +362,8 @@
         </tr>
     </table>
 
+    <hr>
+
     <h3>
         <span class="text-bg">LEARN MORE ABOUT BANAUE</span>
     </h3>
@@ -287,10 +378,10 @@
     </p>
 
     <h2>
-        <span class="text-bg">
-            Banaue: Where Nature Meets Culture
-        </span>
+        <span class="text-bg">Banaue: Where Nature Meets Culture</span>
     </h2>
+
+    <hr>
 
     <h3>
         <span class="text-bg">MUSIC</span>
@@ -300,6 +391,8 @@
         <source src="Pangaasim - Greg Daganos (Cover).mp3" type="audio/mpeg">
         Your browser does not support audio playback.
     </audio>
+
+    <hr>
 
     <h3>
         <span class="text-bg">VIDEO</span>
