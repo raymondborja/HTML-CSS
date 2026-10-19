@@ -1,163 +1,307 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-<title>MY DREAM TRAVEL DESTINATION</title>
+    <title>MY DREAM TRAVEL DESTINATION</title>
+
+    <meta charset="UTF-UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* GENERAL WEBSITE DESIGN */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #183b2a;
+            background-image: url("Banaue.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* MAIN TITLE */
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            background-color: rgba(15, 45, 35, 0.90);
+            padding: 25px;
+            border-radius: 15px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        /* SECTION HEADINGS */
+        h2, h3 {
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgba(20, 65, 45, 0.85);
+            padding: 15px;
+            border-radius: 10px;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+
+        h3 {
+            font-size: 28px;
+        }
+
+        /* PARAGRAPHS */
+        p {
+            color: white;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 18px;
+            line-height: 1.8;
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: justify;
+        }
+
+        /* TRAVEL GALLERY */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 3px solid white;
+            margin: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        /* HORIZONTAL LINES */
+        hr {
+            border: none;
+            height: 3px;
+            background-color: white;
+            margin: 35px 0;
+        }
+
+        /* ACTIVITIES AND REASONS */
+        ol, ul {
+            color: white;
+            background-color: rgba(20, 65, 45, 0.90);
+            padding: 25px 40px;
+            border-radius: 10px;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 100%;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* LEARN MORE BUTTON */
+        a {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #174ea6;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0d326c;
+        }
+
+        /* TRAVEL BUDGET TABLE */
+        table {
+            width: 100%;
+            max-width: 650px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(20, 65, 45, 0.90);
+            color: white;
+            font-size: 18px;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 2px solid white;
+            text-align: center;
+        }
+
+        th {
+            background-color: #183b2a;
+            font-weight: bold;
+        }
+
+        /* AUDIO AND VIDEO */
+        audio, video {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+
+        video {
+            width: 650px;
+            border: 3px solid white;
+            border-radius: 12px;
+        }
+
+        /* MOBILE PHONE DISPLAY */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            h1 {
+                font-size: 35px;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            h3 {
+                font-size: 23px;
+            }
+
+            p {
+                font-size: 16px;
+                text-align: left;
+            }
+
+            ol, ul {
+                font-size: 15px;
+                padding: 20px 30px;
+            }
+
+            table {
+                font-size: 15px;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<style>
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 60px;
-        color: rgb(248, 250, 246);
-        font-weight: bold;
-        text-align: center;
-        background-color: darkblue;
-    }
-</style>
-<h1><strong>RICE TERRECES</strong></h1>
 
-<style>
-    h2 {
-        color:aliceblue;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 40px;
-    }
-    p  {
-        color: white;
-        font-family:Georgia, 'Times New Roman', Times, serif
-        font-size: 12px;
-    }
-</style>
+    <h1>RICE TERRACES</h1>
 
-<style>
-    h3 {
-        color:aliceblue;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 30px;
-    }
-</style>
+    <h2>INTRODUCTION</h2>
 
-<h2>INTRODUCTION</h2>
+    <p>
+        The Banaue Rice Terraces are located in Banaue, Ifugao Province, in the northern Philippines.
+        The place is famous for its beautiful and ancient rice terraces carved into the mountains.
+        These terraces were created by the Ifugao people using traditional farming methods passed down through generations.
+        What makes the Banaue Rice Terraces special is their amazing design, natural beauty, and importance to Ifugao culture and history.
+        The terraces show the strong relationship between the Ifugao people, their land, and their traditional way of life.
+        Tourists visit Banaue to enjoy the breathtaking mountain scenery, take photographs, hike, and learn about the culture and traditions
+        of the Ifugao people. It is a wonderful destination for people who want to experience the beauty, history, and culture of the
+        Philippine highlands.
+    </p>
 
-<p>
-The Banaue Rice Terraces are located in Banaue, Ifugao Province, in the northern Philippines.
-The place is famous for its beautiful and ancient rice terraces carved into the mountains. 
-These terraces were created by the Ifugao people using traditional farming methods passed down through generations.
-What makes the Banaue Rice Terraces special is their amazing design, natural beauty, and importance to Ifugao culture and history. 
-The terraces show the strong relationship between the Ifugao people, their land, and their traditional way of life. 
-Tourists visit Banaue to enjoy the breathtaking mountain scenery, take photographs, hike, and learn about the culture and traditions 
-of the Ifugao people. It is a wonderful destination for people who want to experience the beauty, history, and culture of the 
-Philippine highlands.
-</p>
-<hr>
+    <hr>
 
-<h3>TRAVEL GALLERY</h3>
+    <h3>TRAVEL GALLERY</h3>
 
-<img src="BAN1.jpg" width="300">
-<img src="BAN2.jpg" width="300">
-<img src="BAN4.jpg" width="310">
-<img src="BAN5.jpg" width="315">
+    <img src="BAN1.jpg" width="300" alt="Banaue Rice Terraces">
+    <img src="BAN2.jpg" width="300" alt="Banaue mountain scenery">
+    <img src="BAN4.jpg" width="310" alt="Rice terraces landscape">
+    <img src="BAN5.jpg" width="315" alt="Banaue travel scenery">
 
-<hr>
+    <hr>
 
-<h3>ACTIVITIES TO DO</h3>
+    <h3>ACTIVITIES TO DO</h3>
 
-<ol style="color: rgb(250, 251, 251);
-           background-color: rgb(111, 159, 98);
-           padding: 25px 40px;
-           border-radius: 10px;
-           font-size: 16px;
-           width: fit-content;">
+    <ol>
+        <li><strong>Hiking through the rice terraces</strong> - Explore the beautiful mountain paths and terraces.</li>
+        <li><strong>Taking photographs</strong> - Capture the breathtaking landscapes and scenic views.</li>
+        <li><strong>Visiting local villages</strong> - Experience the traditional lifestyle and culture of the Ifugao people.</li>
+        <li><strong>Learning about Ifugao culture</strong> - Discover their traditions, history, farming practices, and craftsmanship.</li>
+        <li><strong>Enjoying the mountain scenery</strong> - Relax and appreciate the natural beauty of the Cordillera highlands.</li>
+    </ol>
 
-    <li><strong>Hiking through the rice terraces</strong> - Explore the beautiful mountain paths and terraces.</li>
-    <li><strong>Taking photographs</strong> - Capture the breathtaking landscapes and scenic views.</li>
-    <li><strong>Visiting local villages</strong> - Experience the traditional lifestyle and culture of the Ifugao people.</li>
-    <li><strong>Learning about Ifugao culture</strong> - Discover their traditions, history, farming practices, and craftsmanship.</li>
-    <li><strong>Enjoying the mountain scenery</strong> - Relax and appreciate the natural beauty of the Cordillera highlands.</li>
+    <h3>WHY I WANT TO VISIT</h3>
 
-</ol>
+    <ul>
+        <li>I want to see the beautiful Banaue Rice Terraces and experience their breathtaking scenery.</li>
+        <li>I want to learn about Ifugao culture and traditions and understand their way of life.</li>
+        <li>I want to experience hiking through the rice terraces and explore the natural surroundings.</li>
+        <li>I want to take beautiful photographs of the mountains, terraces, and local communities.</li>
+        <li>I want to experience the peaceful environment and appreciate the beauty of nature in Banaue.</li>
+    </ul>
 
-<h3>WHY I WANT TO VISIT</h3>
+    <h3>LEARN MORE</h3>
 
-<ul style="color: rgb(250, 251, 251);
-           background-color: rgb(111, 159, 98);
-           padding: 25px 40px;
-           border-radius: 10px;
-           font-size: 16px;
-           width: fit-content;">
-        
-<li>I want to see the beautiful Banaue Rice Terraces and experience their breathtaking scenery.</li>
-<li>I want to learn about Ifugao culture and traditions and understand their way of life.</li>
-<li>I want to experience hiking through the rice terraces and explore the natural surroundings.</li>
-<li>I want to take beautiful photographs of the mountains, terraces, and local communities.</li>
-<li>I want to experience the peaceful environment and appreciate the beauty of nature in Banaue.</li>
-</ul>
-
-<h3>Learn More</h3>
-
-<a href="https://www.banaueterraces.com/" target="_blank">
-        <button style="background-color: blue;
-                       color: white;
-                       padding: 12px 20px;
-                       border: none;
-                       border-radius: 8px;
-                       cursor: pointer;">
-            Open Website
-        </button>
+    <a href="https://www.banaueterraces.com/" target="_blank" rel="noopener noreferrer">
+        <button>Open Website</button>
     </a>
 
-<h3>ESTIMATED TRAVEL BUDGET</h3>
-<table border="2">
+    <h3>ESTIMATED TRAVEL BUDGET</h3>
 
-<tr style="color: white;">
-<th>Transportation</th>
-<td>P5,000.00</td>
-</tr>
+    <table>
+        <tr>
+            <th>Transportation</th>
+            <td>P5,000.00</td>
+        </tr>
 
-<tr style="color: white;">
-<th>Accomodation</th>
-<td>P10,000.00</td>
-</tr>
+        <tr>
+            <th>Accommodation</th>
+            <td>P10,000.00</td>
+        </tr>
 
-<tr style="color: white;">
-<th>Food</th>
-<td>P10,000.00</td>  
-</tr>
+        <tr>
+            <th>Food</th>
+            <td>P10,000.00</td>
+        </tr>
 
-<tr style="color: white;">
-<th>Activities</th>
-<td>P15,000.00</td>
-</tr>
+        <tr>
+            <th>Activities</th>
+            <td>P15,000.00</td>
+        </tr>
+    </table>
 
-</table>
+    <h3>MY TRAVEL SLOGAN</h3>
 
-<h3>MY TRAVEL SLOGAN</h3>
+    <p>
+        <mark><em>Banaue: Where Nature Meets Culture</em></mark>
+    </p>
 
-<p style="color: white;">
-<mark><em>Banaue: Where Nature Meets Culture</em></mark>
-</p>
+    <audio controls>
+        <source src="Pangaasim - Greg Daganos (Cover).mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
 
-<audio controls style="color: white;">
-<source src="Pangaasim - Greg Daganos (Cover).mp3" type="audio/mpeg">
-</audio>
-
-<div class="video-corner">
+    <div class="video-corner">
         <video controls>
             <source src="BANAUE.m4V" type="video/mp4">
+            Your browser does not support video playback.
         </video>
     </div>
-
-<style>
-body {
-background-image: url("Banaue.png");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
-}
-</style>
 
 </body>
 </html>
